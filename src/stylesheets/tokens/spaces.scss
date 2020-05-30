@@ -1,0 +1,29 @@
+$space-sizes: 0, 5, 10, 15, 20, 40, 80;
+$space-types: (
+  'm': 'margin',
+  'p': 'padding',
+);
+
+@each $size in $space-sizes {
+  @each $name, $space-type in $space-types {
+    .#{$name}-#{$size} {
+      #{$space-type}: #{$size}px;
+    }
+
+    .#{$name}-x-#{$size} {
+      #{$space-type}: 0 #{$size}px;
+    }
+
+    .#{$name}-y-#{$size} {
+      #{$space-type}: #{$size}px 0;
+    }
+
+    .#{$name}-l-#{$size} {
+      #{$space-type}-left: #{$size}px;
+    }
+
+    .#{$name}-r-#{$size} {
+      #{$space-type}-right: #{$size}px;
+    }
+  }
+}

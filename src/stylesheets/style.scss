@@ -1,10 +1,25 @@
+// global styles
 @import '~normalize.css/normalize.css';
+@import './variables.scss';
 @import './base';
 @import './media';
 @import './fonts';
 
-// custom styles
+// tokens
+@import './tokens/colors.scss';
+@import './tokens/spaces.scss';
+@import './tokens/typography.scss';
 
+// components
+@import './components/button.scss';
+@import './components/forms.scss';
+@import './components/modal.scss';
+@import './components/header.scss';
+
+// pages
+@import './pages/home.scss';
+
+// custom styles
 html {
   height: 100%;
 }
@@ -28,4 +43,40 @@ a {
     vertical-align: middle;
     width: 80px;
   }
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }

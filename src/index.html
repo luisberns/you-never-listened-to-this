@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <title>Webpack ES6+ Sass Boilerplate</title>
+    <title>You Never Listened To This</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -14,20 +14,51 @@
         Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
     <meta property="og:url" content="https://github.com/vadimmarkov/webpack-es6-sass-boilerplate" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Webpack ES6+ Sass Boilerplate" />
+    <meta property="og:title" content="You Never Listened To This" />
     <meta
       property="og:description"
-      content="A minimalistic webpack 4 based boilerplate for building web apps"
+      content="Get brand new music recommendations based on your Spotify account."
     />
     <meta property="og:image" content="https://webpack.js.org/icon_192x192.png" />
 
     <meta name="theme-color" content="#fafafa" />
+
+    <script src="https://kit.fontawesome.com/0e376523f1.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <a href="/" class="logo">
-      <img src="images/logo.png" alt="Webpack ES6+ Sass Boilerplate" />
-    </a>
-    <h1>Webpack ES6+ Sass Boilerplate</h1>
+    <header class="flex fixed align-center justify-between p-x-40 header-default bg-black text-white">
+      <div class="flex logo block-img">
+        You Never Listened To This
+      </div>
+      <div class="flex social">
+        <div class="social__link"></div>
+        <div class="social__link">
+          <a class="no-decoration text-white" href="https://github.com/luisberns/you-never-listened-to-this/">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="flex column content bg-white text-black">
+      <div class="flex column content__hero">
+        <div class="flex column content__hero--headline align-center">
+          <h1>You Never Listened To This</h1>
+          <p>Search for a song you like and refine the recommendations to fit your taste.</p>
+        </div>
+        <div class="flex search full-width">
+          <input type="text" id="search" class="search__input">
+          <button id="search-btn" class="search__btn btn btn-default"><i class="fas fa-search fa-sm"></i> Search</button>
+        </div>
+      </div>
+      <div class="flex content__params">
+        <div class="flex param">
+          <div class="flex param__item param-{{paramName}}">
+            <label for="" class="param__label">{{recommmendationLabel}}</label>
+            <div class="slider"></div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
